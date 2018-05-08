@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NewLife.Core, Version=7.0.6701.38620, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NewLife.Core.7.0.6701.38514\lib\net40\NewLife.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -262,6 +265,7 @@
     <EmbeddedResource Include="App.config">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="SNTP\SNTPClient.cs" />
     <None Include="TDP\TDP.pdf" />
     <None Include="架构设计\网络模型.cd" />
@@ -274,12 +278,6 @@
     <Content Include="架构设计\NewLife_TcpServer.jpg" />
     <Content Include="架构设计\NewLife_TCP状态变迁.jpg" />
     <Content Include="架构设计\NewLife_UdpServer.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NewLife.Core\NewLife.Core.csproj">
-      <Project>{5813C22E-EEB3-4DEE-A45C-BB218041193A}</Project>
-      <Name>NewLife.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
